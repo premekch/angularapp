@@ -1,2 +1,5 @@
-<p>input-button-unit works!</p>
-<p>And the title from the unit is {{title}}</p>
+
+<input #input1 [value]="title" 
+(keyup.enter)="changeTitle(input1.value)">
+
+<button (click)="changeTitle(input1.value)">Save</button>
